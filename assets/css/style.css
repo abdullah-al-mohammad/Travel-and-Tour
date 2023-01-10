@@ -10,7 +10,7 @@
 }
 .d-grid{
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(3, 410px);
 }
 .d-flex{
     display: flex;
@@ -26,6 +26,9 @@
 }
 .items-center{
     align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
 }
 .top{
     margin:50px;
@@ -51,7 +54,7 @@
 }
 /* search bar */
 .card{
-    background-color:  #F2FBFE;;
+    background-color:  #F2FBFE;
 }
 .card h4{
     background-color:rgba(0, 70, 139, 0.08); ;
