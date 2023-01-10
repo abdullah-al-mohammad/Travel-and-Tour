@@ -112,3 +112,11 @@ section h1 span{
     text-align: center;
     padding: 10px 0;
 }
+/* best view */
+.details{
+    padding-right: 50px;
+    font-size: 20px;
+}
+.details img{
+    left: 10px;
+}
