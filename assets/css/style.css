@@ -33,6 +33,9 @@
 .top{
     margin:50px;
 }
+.py-2{
+    padding: 24px 0;
+}
 /* banner */
 #banner{
     background-image: url("../images/Rectangle\ .png");
@@ -41,7 +44,7 @@
     background-repeat: no-repeat;
     height: 550px;
 }
-.banner h1{
+.banner h2{
     font-size: 48px;
     color: #FFFFFF;
     line-height: 60px;
@@ -76,6 +79,7 @@ h1{
     padding: 39.5px;
     font-size: 40px;
     color: #00468B;
+    text-align: center;
 }
 .about p{
     padding: 20px;
@@ -119,4 +123,47 @@ section h1 span{
 }
 .details img{
     left: 10px;
+}
+/* popular hiking nepal */
+.g-col2{
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+}
+.popular-view{
+    bottom: 30px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.g-col3{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+}
+.view{
+    padding: 25px;
+}
+.view img{
+    padding: 20px;
+    width: 300px;
+}
+/* Traveller’s Review */
+#review{
+    background:  linear-gradient(180deg, rgba(255, 255, 255, 0.96) 20.07%, rgba(255, 255, 255, 0) 89.58%), url(../images/image\ 6.png);
+    font-size: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#review>.d-flex{
+    height: 600px;
+}
+#review>.d-flex>div{
+    width: 440px;
+    flex: 0 0 440px;
+    padding: 25px;
+    background-color:rgba(255, 255, 255, 0.85);
+}
+/* Blogs & News */
+.g-col3{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
 }
