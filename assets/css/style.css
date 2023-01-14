@@ -30,6 +30,12 @@
 .justify-between{
     justify-content: space-between;
 }
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.justify-around{
+    justify-content: space-around;
+}
 .top{
     margin:50px;
 }
@@ -166,4 +172,52 @@ section h1 span{
 .g-col3{
     display: grid;
     grid-template-columns: repeat(4, 300px);
+}
+.g-col3 div span{
+        padding: 10px;
+}
+.g-col3 div h4{
+    padding: 15px 0 0 0;
+}
+/* our company */
+.our-company h4{
+    padding: 10px 0;
+}
+.our-company img{
+padding: 10px;
+}
+button{
+    height: 35px;
+    background-color: #00468B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+}
+.our-company p{
+    padding-bottom: 15px;
+}
+#companyBanner img{
+    box-shadow: 25px 20px 0px #00468B;
+}
+#companyBanner h4{
+    padding-bottom: 10px;
+}
+/* about */
+.trek-nepal{
+    background-color: #00468B;
+    padding: 100px;
+    color: #FFFFFF;
+}
+#nepal{
+    width: 140px;
+}
+.g-col4{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+}
+.trek-nepal img{
+    padding-bottom: 20px;
+}
+.trek-nepal h5{
+    padding: 10px 0;
 }
