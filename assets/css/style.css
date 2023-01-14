@@ -2,11 +2,19 @@
 *{
     margin: 0;
 }
+.d-none{
+    display: none !important;
+}
 .container{
-    width: 1280px;
+    max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
-    top: 134px;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
 }
 .d-grid{
     display: grid;
@@ -42,9 +50,12 @@
 .py-2{
     padding: 24px 0;
 }
+.g-20{
+    gap: 20px;
+}
 /* banner */
 #banner{
-    background-image: url("../images/Rectangle\ .png");
+    background:  linear-gradient(180deg, rgba(0, 0, 0, 0.38) 20.07%, rgba(0, 0, 0, 0) 89.58%), url(../images/Rectangle\ .png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -82,36 +93,23 @@
     padding: 39.5px;
 }
 h1{
-    padding: 39.5px;
     font-size: 40px;
     color: #00468B;
     text-align: center;
 }
 .about p{
     padding: 20px;
-    font-size: 15px;
+    font-size: 16px;
 }
 /* travel Nepal */
 .card-t{
     padding: 10px;
 }
 .card-t img{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 550px;
-}
-.card-t h1{
-    font-size: 40px;
+    width: 400px;
 }
 section h1 span{
     color:#00ADE8 ;
-}
-.position-relative{
-    position: relative;
-}
-.position-absolute{
-    position: absolute;
 }
 .card-body{
     background-color: #00000052;
@@ -220,4 +218,78 @@ button{
 }
 .trek-nepal h5{
     padding: 10px 0;
+}
+
+/* from here goes media queries */
+/* for mobile device */
+@media (max-width: 375.99px){
+    /* banner secion */
+    #banner {
+        height: 300px;
+    }
+    #banner .container{
+        padding: 0 10px;
+    }
+    #banner h2{
+        line-height: 30px;
+        font-size: 36px;
+    }
+    #banner p {
+        line-height: 22px;
+    }
+    /* search bar */
+    #searchBar .card{
+        padding: 20px 0;
+    }
+    #searchBar .d-flex{
+        display: block;
+        text-align: center;
+    }
+    /* about section */
+    .about img{
+        padding: 0;
+    }
+    .about p{
+        padding: 0;
+    }
+    .about.d-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* travel nepal */
+    #travelNepal .top{
+        margin: 0;
+    }
+    #travelNepal .d-flex{
+        flex-direction: column;
+    }
+    .card-t img{
+        width: 350px;
+    }
+    /* best view */
+    #bestView .top{
+        margin: 0;
+    }
+    #bestView .d-grid{
+        grid-template-columns: repeat(1, 350px);
+        justify-content: center;
+    }
+    #bestView img{
+        width: 350px;
+    }
+    .details {
+        padding-right: 0;
+    }
+    #popular .g-col2{
+        grid-template-columns: repeat(1, 340px);
+    }
+    #tReview .d-flex{
+        flex-direction: column;
+    }
+    #blogsNnews .g-col3{
+        grid-template-columns: repeat(1, 300px);
+    }
+    .container.justify-evenly.d-flex{
+        flex-direction: column;
+    }
 }
