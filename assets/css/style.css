@@ -17,6 +17,12 @@
 .flex-column{
     flex-direction: column;
 }
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
 .text-center{
     text-align: center;
 }
@@ -40,6 +46,15 @@
 }
 .py-2{
     padding: 24px 0;
+}
+section h1 span{
+    color:#00ADE8 ;
+}
+h1{
+    padding: 39.5px;
+    font-size: 40px;
+    color: #00468B;
+    text-align: center;
 }
 /* banner */
 .banner{
@@ -84,37 +99,16 @@
     width: 350px;
     padding: 39.5px;
 }
-h1{
-    padding: 39.5px;
-    font-size: 40px;
-    color: #00468B;
-    text-align: center;
-}
 .about p{
     padding: 20px;
     font-size: 15px;
 }
-/* travel Nepal */
+/* travel tour */
 .card-t{
     padding: 10px;
 }
 .card-t img{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 550px;
-}
-.card-t h1{
-    font-size: 40px;
-}
-section h1 span{
-    color:#00ADE8 ;
-}
-.position-relative{
-    position: relative;
-}
-.position-absolute{
-    position: absolute;
+    width: 400px;
 }
 .card-body{
     background-color: #00000052;
@@ -134,7 +128,7 @@ section h1 span{
     left: 10px;
 }
 /* popular hiking nepal */
-.g-col2{
+.g-col3{
     display: grid;
     grid-template-columns: repeat(3, 340px);
 }
@@ -142,10 +136,7 @@ section h1 span{
     bottom: 30px;
     color: #FFFFFF;
     font-size: 20px;
-}
-.g-col3{
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
+    left: 20px;
 }
 .view{
     padding: 25px;
@@ -172,14 +163,14 @@ section h1 span{
     background-color:rgba(255, 255, 255, 0.85);
 }
 /* Blogs & News */
-.g-col3{
+.g-col4{
     display: grid;
     grid-template-columns: repeat(4, 300px);
 }
-.g-col3 div span{
+.g-col4 div span{
         padding: 10px;
 }
-.g-col3 div h4{
+.g-col4 div h4{
     padding: 15px 0 0 0;
 }
 /* our company */
@@ -205,16 +196,16 @@ button{
 #companyBanner h4{
     padding-bottom: 10px;
 }
-/* about */
+/* Description */
 .trek-nepal{
     background-color: #00468B;
     padding: 100px;
     color: #FFFFFF;
 }
-#nepal{
+.nepal{
     width: 140px;
 }
-.g-col4{
+.g-col5{
     display: grid;
     grid-template-columns: repeat(5, 100px);
 }
@@ -231,36 +222,92 @@ button{
 
 /* mediaQueiry */
 @media screen and (max-width:376px) {
-    .container{
-        max-width: 1280px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+   
+   
+   
     #banner{
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.38) 20.07%, rgba(0, 0, 0, 0) 89.58%), url("../images/Rectangle\ .png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 400px;
+        height: 300px;
     }
     #banner h2{
         color: #FFFFFF;
-        line-height: 60px;
+        line-height: 30px;
+        font-size: 36px;
     }
     #banner p{
         color: #FFFFFF;
-        line-height: 25px;
+        line-height: 22px;
         font-weight: 400px;
     }  
     /* search bar */
-    .d-flex{
+    #searchBar .d-flex{
         display: flex;
         flex-direction: column;
     }
      /* About Nepal */
      .about img{
-        width: 250px;
-        /* padding: 39.5px; */
+        padding: 0px;
     }
-
+    .about p{
+        padding: 10px 0;
+    }
+    .about.d-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    /* travel tour */
+    #travelNepal .d-flex{
+        flex-direction: column;
+    }
+    #travelNepal .top{
+        margin: 0;
+    }
+    .card-t img{
+        width: 350px;
+    }
+    /* best view */
+    #bestView .top{
+        margin: 0;
+    }
+    #bestView .d-grid{
+        grid-template-columns: repeat(1, 390px);
+    }
+    /* popular hiking nepal */
+    .g-col3{
+        grid-template-columns: repeat(1, 340px);
+    }
+    #hikingNepal .top{
+        margin: 0;
+    }
+    .popular-view{
+        font-size: 15px;
+    }
+    /* Traveller’s Review */
+   #travelReview .d-flex{
+    flex-direction: column;
+   }
+   /* Blogs & News */
+   .g-col4{
+    grid-template-columns: repeat(1, 300px);
+   }
+   /* our-company */
+   #companyAccept .d-flex{
+    flex-direction: column;
+   }
+   #companyBanner img{
+    width: 250px;
+   }
+   .our-company img{
+    padding: 5px;
+    }
+    /* Description */
+    .trek-nepal.d-grid{
+        grid-template-columns: repeat(1, 100px);
+    }
+    .trek-nepal.nepal{
+        width: 0;
+    }
 }
